@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulus Peubah Banyak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>CONTENTS</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('turunan-parsial')">Kalkulus Peubah Banyak</a></li>
+                <ul>
+                    <li><a href="#" onclick="showSection('turunan-x')">Turunan Parsial Terhadap x</a></li>
+                    <li><a href="#" onclick="showSection('turunan-y')">Turunan Parsial Terhadap y</a></li>
+                    <li><a href="#" onclick="showSection('turunan-kedua')">Turunan Kedua</a></li>
+                    <li><a href="#" onclick="showSection('fungsi-harmonik')">Fungsi Harmonik</a></li>
+                    <li><a href="#" onclick="showSection('graphics')">Graphics</a></li>
+                </ul>
+                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
+                <li><a href="#" onclick="showSection('kalkulator')">Kalkulator</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div id="turunan-parsial" class="section">
+                <h1>Kalkulus Peubah Banyak</h1>
+                <h3>Turunan Parsial</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, illum aspernatur consectetur error ipsum voluptatem fuga veniam consectetur rem odit consequuntur minima aperiam natus magnam vero enim cum corrupti dolore.
+                </p>
+            </div>
+            <div id="turunan-x" class="section" style="display: none;">
+                <h2>Turunan terhadap x</h2>
+                <p>Materi turunan terhadap x. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="turunan-y" class="section" style="display: none;">
+                <h2>Turunan terhadap y</h2>
+                <p>Materi turunan terhadap y. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="turunan-kedua" class="section" style="display: none;">
+                <h2>Turunan Kedua</h2>
+                <p>Materi tentang turunan kedua. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="fungsi-harmonik" class="section" style="display: none;">
+                <h2>Fungsi Harmonik</h2>
+                <p>Materi tentang fungsi harmonik. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="graphics" class="section" style="display: none;">
+                <h2>Graphics</h2>
+                <p>Materi tentang graphics. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="kontak" class="section" style="display: none;">
+                <h2>Kontak</h2>
+                <p>Kontak kami. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="kalkulator" class="section" style="display: none;">
+                <h2>Partial Derivative Calculator</h2>
+                <form id="derivativeForm">
+                    <label for="function">Function:</label>
+                    <input type="text" id="function" placeholder="e.g., x^2 + y^2" required><br><br>
+                    <label for="variable">Variable:</label>
+                    <input type="text" id="variable" placeholder="e.g., x or y" required><br><br>
+                    <button type="submit">Calculate Derivative</button>
+                </form>
+                <h3>Result:</h3>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
